@@ -20,7 +20,7 @@ In this lab, you will create your first website with an elaborate grid of div co
   
 ### Useful links
 
-- https://getbootstrap.com/docs/4.5/  (bootstrap documentation)
+- https://getbootstrap.com/docs/5.3/getting-started/introduction/  (bootstrap documentation)
 - https://www.w3schools.com/ (great html, css and JS tutorials for beginners and intermediate web
  developers)
 - https://css-tricks.com/ (great website to learn about the power of CSS - which everybody tends
@@ -169,9 +169,8 @@ Congratulations, you've just finished writing your first Bootstrap grid. Try to 
  bit more complex and add some of the elements you've learned about in the section above.
  
  While experimenting with the grid and various elements you might start to wonder how to position
-  elements in the center of a parent element. There is a best practice for such a task with
-   Bootstrap and it makes use of some of the classes 'justify-content-center' and 'align-self
-   -center':  
+  elements in the center of a parent element. Check out the example below and learn about best 
+ practices from Boostrap 4 and 5.
 
 ```html
 
@@ -182,13 +181,22 @@ Congratulations, you've just finished writing your first Bootstrap grid. Try to 
         <div class="col-6" style="background: lightseagreen">
             <div class="row justify-content-center" style="height: 100%">
                 <div class="align-self-center" style="text-align: center; padding: 10px">
-                    this text is in the center because it's using the CSS style 'text-align: center' 
+                    this text is in the center because it's using the CSS style 'text-align: center'
                     and the html element in which the text resides in uses the class 'align-self-center'
-                    and it's parent is a row of height 100% with the class 'justify-content-center'
+                    and it's parent is a row of height 100% with the class 'justify-content-center'. In Bootstrap
+                    version 4, this was the best practice.
                 </div>
             </div>
         </div>
-        <div class="col-6" style="background: #63c3bd"></div>
+        <div class="col-6" style="background: #63c3bd">
+            <div class="row align-items-center" style="height: 100%; background: #b3e2cd; border: thin solid black; border-radius: 5px;">
+                <p class="text-center">
+                    this text is in the center because the html element in which the text resides in uses the class 'text-center'
+                    and it's parent is a row of height 100% with the class 'align-items-center'. In Bootstrap version 5, this is
+                    the best practice. Read more about aligning items in v5  <a href="https://getbootstrap.com/docs/5.3/utilities/flex/#with-align-items">here</a>.
+                </p>
+            </div>
+        </div>
     </div>
     <div class="row" style="height: 10vh; background: rgba(32,178,170,0.85)"></div>
 </div>
@@ -240,6 +248,8 @@ Unlike PX, relative units like %, EM, and REM are better suited to responsive de
 Below,we find all tasks you will need to complete in order to create a dashboard grid similar to
  the preview image. The tasks are supposed to structure your coding process but feel free to
   create your own workflow as soon as you feel comfortable
+
+0. **Create a best practice folder structure for your project**
 
 1. **Create a new html document called index.html**
 	       

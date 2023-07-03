@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0915044-2315-4e1d-872f-d64e433c03ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/session_06/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/img/DOM.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/img/box_model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/img/final_result.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/session_06_lab_manual.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_one.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_two.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_06/session_06_lab_manual.md" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/session_06_lab_manual.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_06/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Robert/Documents/CodingProjects/CS-14115_SS23",
+    "last_opened_file_path": "C:/Users/Robert/Documents/CodingProjects/CS-14115_SS23/session_06",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +50,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -64,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688326442787</updated>
-      <workItem from="1688326443944" duration="6514000" />
+      <workItem from="1688326443944" duration="9454000" />
     </task>
     <servers />
   </component>
