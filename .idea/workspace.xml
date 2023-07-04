@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0915044-2315-4e1d-872f-d64e433c03ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/session_06/example_one.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/example_two.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session_06/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/example_03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/example_playgrounds/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/img/DOM.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/img/box_model.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/img/final_result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_06/solution/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_06/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/example_playgrounds/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_06/img/DOM.gif" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/example_playgrounds/img/DOM.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_06/img/box_model.png" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/example_playgrounds/img/box_model.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_06/img/final_result.png" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/example_playgrounds/img/final_result.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session_06/session_06_lab_manual.md" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/session_06_lab_manual.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session_06/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Robert/Documents/CodingProjects/CS-14115_SS23/session_06",
+    "last_opened_file_path": "C:/Users/Robert/Documents/CodingProjects/CS-14115_SS23/session_06/js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,11 +71,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\js" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\css" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution\css" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06" />
-      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\css" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\example_playgrounds" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution\js" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution\css" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,7 +93,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688326442787</updated>
-      <workItem from="1688326443944" duration="9454000" />
+      <workItem from="1688326443944" duration="25278000" />
+      <workItem from="1688485496665" duration="4806000" />
     </task>
     <servers />
   </component>

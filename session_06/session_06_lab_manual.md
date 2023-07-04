@@ -1,6 +1,6 @@
 # Session 06 | Lab
 
-![Preview](img/final_result.png?raw=true "D3 Projections")
+![Preview](example_playgrounds/img/final_result.png?raw=true "D3 Projections")
 
 
 ### Learning Objectives
@@ -44,7 +44,7 @@ As some of you might already know, HTML is not a real coding language. It is a m
   The HTML DOM model is constructed as a tree of Objects:
   
   
-![Preview](img/DOM.GIF?raw=true "D3 Projections")
+![Preview](example_playgrounds/img/DOM.GIF?raw=true "D3 Projections")
 
 As you can see on this basic diagram (which is a basic website with just one link), there are
  some basic tags that will always be part of your html file (document, html, head, body). For that
@@ -210,7 +210,7 @@ In CSS, the term "box model" is used when talking about design and layout.
 
 The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
 
-![Preview](img/box_model.png?raw=true "Final Result")
+![Preview](example_playgrounds/img/box_model.png?raw=true "Final Result")
 
 - Content - The content of the box, where text and images appear
 - Padding - Clears an area around the content. The padding is transparent
@@ -242,14 +242,16 @@ Unlike PX, relative units like %, EM, and REM are better suited to responsive de
 
 ## Lab 06 - Tasks
 
-![Preview](img/final_result.png?raw=true "Final Result")
+![Preview](example_playgrounds/img/final_result.png?raw=true "Final Result")
 
 
 Below,we find all tasks you will need to complete in order to create a dashboard grid similar to
- the preview image. The tasks are supposed to structure your coding process but feel free to
+ the preview image. The tasks are supposd to structure your coding process but feel free to
   create your own workflow as soon as you feel comfortable
 
 0. **Create a best practice folder structure for your project**
+
+![Preview](example_playgrounds/img/folder_structure_example.png?raw=true "Final Result")
 
 1. **Create a new html document called index.html**
 	       

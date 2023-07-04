@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML grid & DOM manipulation</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+	<!-- WRAPPER -->
+	<div class="container-fluid" style="height: 100vh; padding-top: 1vh">
+		<div class="row">
+			<div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
+
+				<!-- TOP ROW: HEADING -->
+				<div class="row align-items-center" style="height: 10vh; padding: 0; background: #bdbdbd; border-bottom: thin solid grey">
+						<h1 class="text-center">Session_06 - Dashboard with Placeholders</h1>
+				</div>
+
+				<!-- MAIN ROW: CONTENT -->
+				<div class="row" style="height: 70vh; background: lightgrey; border-bottom: thin solid grey">
+
+					<!-- LEFT SIDE -->
+					<div class="col-7">
+						<div class="row" style="height: 70vh">
+							<div id="myCarousel" class="carousel slide" data-bs-ride="carousel"; style="padding-bottom: 1vh; padding-top: 1vh; margin-left: 0vh">
+								<div class="carousel-inner" style="height: 100%; background: transparent">
+
+									<div class="carousel-item active" style="height: 100%; background: rgba(64,64,64,0.4); border: thin solid grey; border-radius: 5px">
+										<div class="row align-items-center" style="height: 100%">
+											<p class="text-center">MAP</p>
+										</div>
+									</div>
+									<div class="carousel-item" style="height: 100%; background: rgba(64,64,64,0.4); border: thin solid grey; border-radius: 5px">
+										<div class="row align-items-center" style="height: 100%">
+											<p class="text-center">TABLE</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- RIGHT SIDE -->
+					<div class="col-5">
+
+						<!--WRAPPER FOR BOX #1-->
+						<div class="row" style="height: 20%; padding: 1vh 1vh 1vh 0vh;">
+							<div class="col" >
+
+								<!-- INNER -->
+								<div class="row" style="height: 100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)">
+									<div class="col-4">
+										<div class="row align-items-center justify-content-center" style="height: 100%;">
+											<button id="switchViewButton" class="btn btn-light" type="button" onclick="switchView()" style="height: 5vh; width: 8vw; border: thin solid black">map view</button>
+										</div>
+									</div>
+									<div class="col-8">
+										<div class="row align-items-center justify-content-center" style="height: 100%">
+											<select id='categorySelector' class="form-select" style="width: 16vw; height: 5vh; border: thin solid black" onchange="categoryChange()">
+												<option value="absCases" selected>Cases (absolute)</option>
+												<option value="absDeaths">Deaths (absolute)</option>
+												<option value="relCases">Cases (relative to population)</option>
+												<option value="relDeaths">Deaths (relative to population)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--WRAPPER FOR BOX #2-->
+						<div class="row" style="height: 40%; padding: 0vh 1vh 1vh 0vh;">
+							<div class="col">
+								<!-- INNER -->
+								<div class="row align-items-center" style="height: 100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)">
+									<p class="text-center">chart #1</p>
+								</div>
+							</div>
+						</div>
+
+						<!--WRAPPER FOR BOX #2-->
+						<div class="row" style="height: 40%; padding: 0vh 1vh 1vh 0vh;">
+							<div class="col">
+								<!-- INNER -->
+								<div class="row align-items-center" style="height: 100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)">
+									<p class="text-center">chart #2</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="row" style="height: 18vh; background: #bdbdbd; padding: 0; border: 0">
+					<div class="col">
+						<div class="row align-items-center" style="height: 100%">
+							<p class="text-center">Your brushable line chart here</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- - - - - - - - - - - - >
+	<    Load JS libraries     >
+	<- - - - - - - - - - - - -->
+
+	<!--BOOTSTRAP -->
+	<script src="js/bootstrap.js"></script>
+
+	<!--OWN JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
