@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="content-1"></div>
+<div id="content-2"></div>
+<script src="js/main.js"></script>
+
+
+<script type="text/javascript">
+    // Write HTML with JS
+    document.getElementById("content-1").innerHTML = '<h1>Headline</h1>...and some text';
+
+    // Loop through array, build HTML block and finally display it on the page
+    let fruits = ["Orange", "Banana", "Apple"];
+    let result = '';
+    fruits.forEach((fruit, index) => {
+        result += fruits[index] + "<br/>"
+    })
+
+    document.getElementById("content-2").innerHTML = result;
+</script>
+</body>
+</html>
