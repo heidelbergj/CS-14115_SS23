@@ -692,7 +692,8 @@ We will provide a template with a basic *HTML structure*, a *dataset* (stored in
 
 3. **Array filtering**
 
-	Open the JS file ```week03_lab.js``` (*js* folder). Most of the tasks you need to complete should be implemented in the function: *dataFiltering()*.
+	Open the JS file ```main.js``` (*js* folder). Most of the tasks you need to complete should be 
+   implemented in the function: *dataFiltering()*.
 	
 	We have included a template of the function, and have created a local variable ```attractions``` from the global variable and we have called the function right before. You should work with the local variable ```attractions``` - don't override the global one.
 	

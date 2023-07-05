@@ -6,7 +6,7 @@
 // CHART AREA
 
 let margin = {top: 40, right: 20, bottom: 40, left: 90},
-    width = $('#chart-area').width() - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 
