@@ -76,9 +76,6 @@ function drawChart(data){
 		.enter()
 		.append("circle")
 		.attr("class", "country-circle")
-		.attr("cx", function(d){
-			return incomeScale(d.Income)
-		})
 		.attr("cx", d => incomeScale(d.Income))
 		.attr("cy", d => lifeExpectancyScale(d.LifeExpectancy))
 		.attr("r", d => populationScale(d.Population))

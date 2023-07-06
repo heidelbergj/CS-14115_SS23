@@ -21,19 +21,19 @@ function categoryChange (){
 // first initialize the carousel using jQuery
 const carousel = new bootstrap.Carousel('#myCarousel')
 
-
 // next, make sure you prevent the carousel from constantly rotating
 carousel.pause()
 
 // task # 3 - carousel button
 function switchView(){
 
-    console.log('test')
+    console.log('clicked')
+
     // grab carousel and just go to the next slide (since we have only two slides - it will start from the beginning after it has reached the end)
     carousel.next()
     carousel.pause() // pause after sliding
 
-    // bonus task: change the
-    document.querySelector('#switchViewButton').innerHTML === 'map view'  ? document.querySelector('#switchViewButton').innerHTML = 'table view' :  document.querySelector('#switchViewButton').innerHTML='map view';
+    // bonus task: change the button text
+    document.querySelector('#switchViewButton').innerHTML === 'map view' ? document.querySelector('#switchViewButton').innerHTML = 'table view' :  document.querySelector('#switchViewButton').innerHTML='map view';
 }
 

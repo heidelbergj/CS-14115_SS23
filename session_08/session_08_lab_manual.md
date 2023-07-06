@@ -1,4 +1,4 @@
-# Lab 09
+# session 08
 
 ### Learning Objectives
 
@@ -8,14 +8,7 @@
 - Know how to group and transform SVG elements 
 - Know how to use scales to create axes in D3
 
-### Prerequisites
-
-- You have read and **programmed** along with chapter 7 and 8 in *D3 - Interactive Data Visualization for the Web*.
-
-
-Last time you created your first D3 visualizations. You added content to the DOM, mapped datasets to
- visual elements on the webpage and defined dynamic, data-dependent properties. 
-This week we will focus on Scales and Axes to create visualizations that adapt dynamically to input.
+## In-class D3.js Demo
 
 ## Scales
 
@@ -32,7 +25,7 @@ That is not very flexible and only feasible for static data. What if our data at
 
 *Example:* We want to visualize the monthly sales of an ice cream store. The input data are numbers between 0 and 20,000 USD and the maximum height of the chart is 400px. We take an input inverval (called ***Domain***) and transform it into a new output interval (called ***Range***).
 
-![Scales](cs14115-scales.png?raw=true "Scales")
+![Scales](img/cs14115-scales.png?raw=true "Scales")
 
 We could transform the numbers from one domain into the other manually but what if the sales rise above 20.000 and the interval changes? That means a lot of manual work. Thankfully, we can use D3's built-in scaling methods to do this automatically.
 
@@ -88,7 +81,7 @@ In this lab you will work on a scatterplot with flexible scales and axes. You wi
 
 *Result:*
 
-![Lab 5 - Preview](cs14115-lab-09-preview.png?raw=true "Lab 5 - Preview")
+![Lab 5 - Preview](img/cs14115-lab-09-preview.png?raw=true "Lab 5 - Preview")
 
 ***Data:*** ```Country``` | ```Income``` | ```LifeExpectancy``` | ```Population``` | ```Region```
  
@@ -109,10 +102,10 @@ In this lab you will work on a scatterplot with flexible scales and axes. You wi
 	* Save the new D3 selection in a variable (```var svg = d3.select("#chart-area")...```)
 
 4. 	**Create linear scales by using the D3 scale functions**
-
-	* You will need an *income* scale (x-axis) and a scale function for the *life expectancy* (y-axis). Call them ```incomeScale``` and ```lifeExpectancyScale```.
-	* Use *d3.min()* and *d3.max()* for the *input domain*
-	* Use the variables ```height``` and ```width``` for the *output range*
+        * You will need an *income* scale (x-axis) and a scale function for the *life expectancy* 
+         (y-axis). Call them ```incomeScale``` and ```lifeExpectancyScale```.
+        * Use *d3.min()* and *d3.max()* for the *input domain*
+        * Use the variables ```height``` and ```width``` for the *output range*
 
 5. **Try the scale functions**
 
@@ -127,17 +120,26 @@ In this lab you will work on a scatterplot with flexible scales and axes. You wi
 	Hint: If you get different return values than the ones given make sure that you are using min/max for the input domain. Also, use zero to width for the output range of the income scale. For the output range of the life expectancy scale use 0 and height. However, you want small life expectancy values to map to the bottom of the chart, and high life expectancy values to map to the top of the chart. Think about how you can do that with a scale! 	
 &nbsp;
 	
-6. **Map the countries to SVG circles**
+   6. **Map the countries to SVG circles**
 
-	* Use D3 to bind the data to visual elements, as you have done before (using D3's ```select()```, ```data()```, ```enter()```, ```append()```, etc.). Use svg circles as marks.
-	* Instead of setting the x- and y-values directly, you have to use your scale functions to convert the data values to pixel measures
-	
-		```javascript
-		// Ice Cream Example
-		.attr("cx", function(d){ return iceCreamScale(d.sales); })
-		```
+* Use D3 to bind the data to visual elements using 
 
-	* Specify the circle attributes: ```r```, ```stroke``` and ```fill```
+  ```javaScript
+  let circles = svg.selectAll("circle").data(data)
+  ```
+          
+       
+* Using the `enter()` selection, append circles for each country:
+
+   ```javaScript
+        circles.enter()
+         .append("circle")
+         .attr("class", "country-circle")
+         .attr("cx", d => incomeScale(d.Income))
+         .attr("cy",...
+   ```
+
+* Specify the circle attributes: ```r```, ```stroke``` and ```fill```
 
 7. **Refine the range of the scales**
 
@@ -186,7 +188,7 @@ var group = svg.append("g")
 	.attr("transform", "translate(70, 50)");
 ```
 
-![SVG Groups](cs14115-svg-groups.png?raw=true "SVG Groups")
+![SVG Groups](img/cs14115-svg-groups.png?raw=true "SVG Groups")
 
 
 
@@ -223,7 +225,7 @@ svg.append("g")
 	.attr("class", "axis x-axis")
 	.call(xAxis);
 ```
-![D3 Axis 1](cs14115-d3-axis-1.png?raw=true "D3 Axis 1")
+![D3 Axis 1](img/cs14115-d3-axis-1.png?raw=true "D3 Axis 1")
 
 Recall that we can use the *transform* attribute to change the position and move the axis to the bottom. 
 
@@ -253,7 +255,7 @@ Additionally, you can use the HTML *class* property as a selector and modify the
 
 *```shape-rendering``` is an SVG property which specifies how the SVG elements are getting rendered. We have used it in this example to make sure that we don't get blurry axes.*
 
-![D3 Axis 2](cs14115-d3-axis-2.png?raw=true "D3 Axis 2")
+![D3 Axis 2](img/cs14115-d3-axis-2.png?raw=true "D3 Axis 2")
 
 
 ### Refine the axis
@@ -371,7 +373,7 @@ linearColor(0)		// Returns: #006400
 linearColor(50)		// Returns: #48a948
 linearColor(100) 	// Returns: #90ee90
 ```
-![D3 Linear Color Scale](cs14115-linear-color-scale.png?raw=true "Linear Color Scale")
+![D3 Linear Color Scale](img/cs14115-linear-color-scale.png?raw=true "Linear Color Scale")
 
 
 &nbsp;
@@ -403,7 +405,7 @@ linearColor(100) 	// Returns: #90ee90
 	*Most likely you also have to modify the axis ticks.*
 
 
-![Different Axis Scales](cs14115-different-axis-scales.png?raw=true "Different Axis Scales")
+![Different Axis Scales](img/cs14115-different-axis-scales.png?raw=true "Different Axis Scales")
 
 
 -----
@@ -417,7 +419,7 @@ Positioning the axes or defining the correct spacing between the components can 
 
 > By convention, margins in D3 are specified as an object with top, right, bottom and left properties. Then, the outer size of the chart area, which includes the margins, is used to compute the inner size available for graphical marks by subtracting the margins. *(Mike Bostock)*
 
-![D3 Margin Convention](cs14115-margin-convention.png?raw=true "Margin Convention")
+![D3 Margin Convention](img/cs14115-margin-convention.png?raw=true "Margin Convention")
 
 *Please take some time to look at the recommended sequence by Mike Bostock:*
 

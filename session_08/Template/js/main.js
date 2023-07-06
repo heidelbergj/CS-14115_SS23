@@ -6,6 +6,8 @@ let width = 700,
 
 // Load CSV file
 d3.csv("data/wealth-health-2014.csv", d => {
+
+	d.LifeExpectancy = +d.LifeExpectancy
 	return d;
 }).then( data => {
 
