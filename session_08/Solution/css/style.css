@@ -1,0 +1,124 @@
+
+/****************/
+/*    GENERAL   */
+/****************/
+
+body {
+  background-color: #e1e3e4;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+  font-weight: 100;
+  color: #384B84;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 60px;
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8FABAF;
+  font-style: italic;}
+
+.logo {
+  margin-top: 40px;
+  font-size: 80px;
+  color: #56649A;
+}
+
+.content {
+  text-align: center;
+}
+
+.user-control label {
+  margin-right: 20px;
+}
+
+.user-control #attraction-category {
+  display: inline-block;
+  background: transparent;
+  max-width: 200px;
+  border: 1px solid #75D4CA;
+  outline: none;
+}
+
+.source-desc {
+  font-size: 11px;
+  color: #ABB0B3;
+  margin-top: 20px;
+}
+
+
+
+/****************/
+/*   BAR-CHART  */
+/****************/
+
+.bar {
+  fill: #3C948B;
+}
+
+.bar:hover {
+  fill: #327972;
+}
+
+.axis {
+  font: 15px sans-serif;
+  fill: red;
+}
+
+.axis path,
+.axis line,
+.domain {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+
+#chart-area text {
+  font-size: 11px;
+}
+
+.axis-label {
+  fill: #888;
+  font-size: 10px;
+}
+
+
+
+/****************/
+/*   TOOLTIPS   */
+/****************/
+
+.d3-tip {
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}

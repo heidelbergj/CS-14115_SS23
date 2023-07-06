@@ -138,7 +138,7 @@ This lab includes three activities and covers JS basics. It is intended to solid
 
 *The result of this lab may look like the following screenshot. Among other things, you will work with data from amusement parks and museums and do some array manipulations and filtering. At the end you will use JS to call a function that will render a pre-configured bar chart.*
 
-![Lab 2 - Preview](week-03_lab_preview.png?raw=true "Lab 2 - Preview")
+![Lab 2 - Preview](img/week-03_lab_preview.png?raw=true "Lab 2 - Preview")
 
 ### A short reiteration of the basic concepts of JavaScript (JS)
 
@@ -405,7 +405,7 @@ arrayWithNames.forEach( (element, index) => {
 ```
 
 *Result:*
-![Lab 2 - For-Loops](cs14115-for-loop-examples.png?raw=true "Lab 2 - For-Loops")
+![Lab 2 - For-Loops](img/cs14115-for-loop-examples.png?raw=true "Lab 2 - For-Loops")
 
 
 #### Functions
