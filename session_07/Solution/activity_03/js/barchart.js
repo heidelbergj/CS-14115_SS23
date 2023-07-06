@@ -59,7 +59,8 @@ function renderBarChart(data) {
     y.domain([0, d3.max(data, d => d.Visitors)]);
 
 	// OLD FORMAT
-	// y.domain([0, d3.max(data, function (dataElement){
+	// y.domain([0, d3.max(data, function (
+	// dataElement){
 	// 		return dataElement.Visitors
 	// 	})
 	// ]);
@@ -67,8 +68,6 @@ function renderBarChart(data) {
 
 	// ---- DRAW BARS ----
     let bars = svg.selectAll(".bar")
-        // .remove()
-        // .exit()
         .data(data)
 
 	console.log(bars)
@@ -76,9 +75,6 @@ function renderBarChart(data) {
     bars.enter()
         .append("rect")
         .attr("class", "bar")
-		.attr("id", function (d, i){
-			console.log(d,i)
-		})
         .attr("x", d => x(d.Location))
         .attr("y", d => y(d.Visitors))
         .attr("height", d => (height - y(d.Visitors)))

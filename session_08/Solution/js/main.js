@@ -40,12 +40,12 @@ function drawChart(data){
 
 	// X scale
 	let incomeScale = d3.scaleLog()
-		.domain([d3.min(data, d => d.Income) - 100, d3.max(data, d => d.Income )])
+		.domain([d3.min(data, d => d.Income), d3.max(data, d => d.Income )])
 		.range([0, width]);
 
 	// Y scale
 	let lifeExpectancyScale = d3.scaleLinear()
-		.domain([d3.min(data, d => d.LifeExpectancy) - 5, d3.max(data, d => d.LifeExpectancy) + 5])
+		.domain([d3.min(data, d => d.LifeExpectancy), d3.max(data, d => d.LifeExpectancy)])
 		.range([height, 0]);
 
 	// Radius Scale
@@ -56,23 +56,22 @@ function drawChart(data){
 	// Region Scale (ordinal)
 	let regionScale = d3.scaleOrdinal(d3.schemeCategory10);
 
+	data.forEach(d => {
+		console.log(d.Region)
+	})
 
-	// Map data to visual elements (SVG circles)
-/*	let occupants = svg.selectAll("circle")
-		.data(data)
-		.enter()
-		.append("circle")
-		.attr("class", "country-circle-old")
-		.attr("cx", 50)
-		.attr("cy", 50)
-		.attr("r", d => populationScale(d.Population))
-		.attr("stroke", "#333")
-		.attr("opacity", 0.7)
-		.attr("fill", d => regionScale(d.Region));*/
+	let regions = ['1','2','3','4']
+	console.log(d3.schemeCategory10)
+
+	d3.schemeCategory10
 
 	// Map data to visual elements (SVG circles)
 	let circles = svg.selectAll("circle")
 		.data(data)
+
+	console.log(circles)
+
+	circles
 		.enter()
 		.append("circle")
 		.attr("class", "country-circle")
@@ -85,7 +84,6 @@ function drawChart(data){
 		.on('mouseover', (event, d) => {
 			console.log(event, d, this)
 		})
-
 
 
 	// Create axes functions

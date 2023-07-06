@@ -8,6 +8,8 @@ let width = 700,
 d3.csv("data/wealth-health-2014.csv", d => {
 
 	d.LifeExpectancy = +d.LifeExpectancy
+	console.log(d)
+
 	return d;
 }).then( data => {
 
@@ -15,9 +17,7 @@ d3.csv("data/wealth-health-2014.csv", d => {
 	console.log(data);
 	console.log("Countries: " + data.length)
 
-	let sort = [];
-
-	drawChart(sort)
+	drawChart(data)
 
 });
 

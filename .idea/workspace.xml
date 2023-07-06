@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d0915044-2315-4e1d-872f-d64e433c03ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session_06/solution/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_06/solution/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_07/Solution/activity_03/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_07/Solution/activity_03/js/barchart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session_08/Solution/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_08/Solution/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session_08/Template.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/session_08/Template/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_08/Template/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/session_08/session_08_lab_manual.md" beforeDir="false" afterPath="$PROJECT_DIR$/session_08/session_08_lab_manual.md" afterDir="false" />
     </list>
@@ -73,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688326442787</updated>
       <workItem from="1688326443944" duration="25278000" />
-      <workItem from="1688485496665" duration="27554000" />
+      <workItem from="1688485496665" duration="32864000" />
     </task>
     <servers />
   </component>
