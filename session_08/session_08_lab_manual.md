@@ -127,21 +127,8 @@ d3.csv("data/wealth-health-2014.csv", d => {
 
    *Of course, this is only one way to specify the spacing. You could also include margin variables for the whole SVG area or introduce separate padding variables for each axis. We will work with margin variables later in this lab.*
 
-3. **Refine the domain of the scales**
 
-   You have used the min and max values of the dataset to define the domain. The axis component creates a visual representation of this scale and therefore some of the circles are positioned on the outer edges of your svg area.
-
-   *You can include buffer values to widen the domain and to prevent circles and axes from overlapping:*
-
-   ```javascript
-   //Ice Cream Example
-   .domain([
-       d3.min(data, function(d){ return d.sales }) - 100,
-       d3.max(data, function(d){ return d.sales }) + 100
-   ])
-   ```
-
-4. **Label your axes**
+3. **Label your axes**
 
    Create titles/labels for your scatterplot axes. The label for the x-axis should be below the x-axis, the label for the y-axis should be left ot the y-axis. (For the y-axis label you will need to rotate your text by using the *transform* attribute.)
 
