@@ -6,7 +6,7 @@
 // CHART AREA
 
 let margin = {top: 40, right: 20, bottom: 40, left: 90},
-    width = $('#chart-area').width() - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 
@@ -44,7 +44,7 @@ let yAxisGroup = svg.append("g")
 function renderBarChart(data) {
 
 	// Check array length (top 5 attractions)
-	if(data.length > 5) {
+	if(data.length > 5){
 		errorMessage("Max 5 rows");
 		return;
 	}
@@ -58,15 +58,27 @@ function renderBarChart(data) {
 	x.domain(data.map( d => d.Location));
     y.domain([0, d3.max(data, d => d.Visitors)]);
 
-  // ---- DRAW BARS ----
+	// OLD FORMAT
+	// y.domain([0, d3.max(data, function (dataElement){
+	// 		return dataElement.Visitors
+	// 	})
+	// ]);
+
+
+	// ---- DRAW BARS ----
     let bars = svg.selectAll(".bar")
-        .remove()
-        .exit()
+        // .remove()
+        // .exit()
         .data(data)
+
+	console.log(bars)
 
     bars.enter()
         .append("rect")
         .attr("class", "bar")
+		.attr("id", function (d, i){
+			console.log(d,i)
+		})
         .attr("x", d => x(d.Location))
         .attr("y", d => y(d.Visitors))
         .attr("height", d => (height - y(d.Visitors)))
