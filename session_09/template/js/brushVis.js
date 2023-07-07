@@ -204,7 +204,7 @@ class BrushVis {
             .attr("clip-path", "url(#clip)");
 
 
-        // draw pathOne
+        // draw pathTwo
         vis.pathTwo.datum(vis.dataPathTwo)
             .transition().duration(400)
             .attr("d", vis.area)

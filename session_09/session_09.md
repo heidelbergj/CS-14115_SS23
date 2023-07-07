@@ -72,7 +72,7 @@ Having attended a D3 choropleth bootcamp recently, you think that you're well-eq
 
 ## Implementation
 
-### Overview
+### Big Picture Overview
 
 1. **Download the resources**
 
@@ -157,8 +157,9 @@ Having attended a D3 choropleth bootcamp recently, you think that you're well-eq
      that has not been projected (e.g. 'states-10m.json'), and you do the projection
       yourself and play around with ```scale``` and ```transform()```, and 2) alternatively, you can use
        a map that has already been projected (e.g. 'states-albers-10m.json') to a specific viewpoint
-        (976 on 610) to then just do some basic math to create the perfect fit for your website. You've seen the code for projections in the lab, here's the code for geometries that
-         have been projected to exact viewpoints.
+        (976 on 610) to then just do some basic math to create the perfect fit for your website. 
+   For this task, we will use a map that has already been projected. Thus, we only need to 
+   prepare a zoom factor that we can use to scale the map accordingly.
 
     ```javascript
     vis.viewpoint = {'width': 975, 'height': 610};
@@ -170,8 +171,25 @@ Having attended a D3 choropleth bootcamp recently, you think that you're well-eq
         .attr('transform', `scale(${vis.zoom} ${vis.zoom})`);
     ```
 
-    You should now be able to draw all the states. Do so in initVis.
-    
+    You can now move on to draw all the states. In order to do so, you will need a path 
+   generator. This path generator will help you later in your code to generate the `d` attribute,
+   that will define the outline of each state (`.attr("d", vis.path)`)
+
+    ```javascript
+        vis.path = d3.geoPath();
+    ```
+   
+    Now, you can move on to drawing the states. Do you remember the d3 methods to do so? Here 
+   are some hints: 
+
+    ```javascript
+        vis.states = vis.map.selectA...
+            .data(topojson.feature(vis.dataTopographic, vis.dataTopographic.objects.states).features)
+            .e...
+            .ap..
+            .at..
+    ```
+   
     &nbsp; 
     
 5. **Define wrangleData() method**  
