@@ -5,12 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0915044-2315-4e1d-872f-d64e433c03ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/session_10/md/cs171_w8_hw_bars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/md/cs171_w8_hw_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/md/cs171_w8_hw_preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/md/cs171_w8_hw_template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/session_09.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/data/census_usa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/data/covid_data_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/data/covid_data_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/js/barVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/js/brushVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/js/dataTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/js/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/solution/js/mapVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/data/census_usa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/data/covid_data_20.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/data/covid_data_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/js/barVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/js/brushVis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/js/dataTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/js/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session_10/template/js/mapVis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session_07/Solution/activity_03/js/barchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_07/Solution/activity_03/js/barchart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session_08/Solution/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_08/Solution/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session_08/Template.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/session_08/Template/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/session_08/Template/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session_08/session_08_lab_manual.md" beforeDir="false" afterPath="$PROJECT_DIR$/session_08/session_08_lab_manual.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +62,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Robert/Documents/CodingProjects/CS-14115_SS23/session_08",
+    "last_opened_file_path": "C:/Users/Robert/Documents/CodingProjects/CS-14115_SS23/session_10",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,18 +74,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_08" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_10" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23" />
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_08" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\js" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\css" />
-      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_10\md" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_07\img" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_08\img" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\example_playgrounds" />
       <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution\js" />
-      <recent name="C:\Users\Robert\Documents\CodingProjects\CS-14115_SS23\session_06\solution\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1688326442787</updated>
       <workItem from="1688326443944" duration="25278000" />
-      <workItem from="1688485496665" duration="32864000" />
+      <workItem from="1688485496665" duration="38122000" />
+      <workItem from="1688730330275" duration="1457000" />
     </task>
     <servers />
   </component>
