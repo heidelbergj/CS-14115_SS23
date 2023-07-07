@@ -5,12 +5,7 @@
 
 class BarVis {
 
-    constructor(parentElement, covidData, usaData, descending = true){
-
-        this.parentElement = parentElement;
-        this.covidData = covidData;
-        this.usaData = usaData;
-        this.descending = descending
+    constructor(){
 
         this.initVis()
     }
@@ -42,7 +37,7 @@ class BarVis {
             .attr('class', "tooltip")
             .attr('id', 'barTooltip')
 
-
+        // TODO
 
         this.wrangleData();
     }
@@ -111,7 +106,7 @@ class BarVis {
         })
         // TODO: Sort and then filter by top 10
         // maybe a boolean in the constructor could come in handy ?
-
+        /*
         if (vis.descending){
             vis.stateInfo.sort((a,b) => {return b[selectedCategory] - a[selectedCategory]})
         } else {
@@ -122,8 +117,8 @@ class BarVis {
 
         vis.topTenData = vis.stateInfo.slice(0, 10)
 
-        console.log('TOP TEN final data structure', vis.topTenData);
-
+        console.log('final data structure', vis.topTenData);
+        */
 
 
         vis.updateVis()
@@ -134,30 +129,6 @@ class BarVis {
         let vis = this;
 
         console.log('here')
-
-
-        vis.rects = vis.svg.selectAll("rect").data(vis.topTenData)
-
-        console.log(vis.rects)
-
-        vis.x = d3.scaleBand()
-            .range([0, vis.width])
-            .domain(vis.topTenData.map( d=>{ return d.state}))
-            .padding(0.1)
-
-        vis.y = d3.scaleLinear()
-            .range([0, vis.height])
-            .domain([0, d3.max(vis.stateInfo, d=> d[selectedCategory])])
-
-
-        //console.log(vis.topTenData.map( d=>{ return d.state}))
-
-        vis.rects.enter().append("rect")
-            .attr('width', vis.x.bandwidth())
-            .attr('height', 50)
-            .attr('x', d => vis.x(d.state))
-            .attr('y', d => vis.y(d[selectedCategory]))
-            .attr('fill', 'red')
 
     }
 
